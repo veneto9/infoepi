@@ -1,0 +1,70 @@
+
+:root {
+  --cor-primaria: #1d4d46;
+  --cor-secundaria: #8a9e64;
+  --cor-terciaria: #f5f0e1;
+  --cor-destaque: #b05c3b;
+  --cor-texto: #333;
+  --cor-claro: #ffffff;
+  --sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transicao: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-texto);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-destaque);
+}
+
+.nav-toggle {
+  display: block;
+  font-size: 2rem;
+  color: var(--cor-destaque);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.section-title h2 {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  transition: var(--transicao);
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: var(--sombra-suave);
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+}
+
+footer h5 {
+  color: var(--cor-claro);
+}
+
+footer a {
+  color: #bbb;
+}
+
+footer a:hover {
+  color: var(--cor-claro);
+}

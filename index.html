@@ -3,198 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal institucional com notícias, indicadores e recursos sobre vigilância epidemiológica.">
     <title>InfoEpi - Vigilância em Saúde</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Certifique-se de que o caminho esteja correto -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/placeholder.jpg" alt="Logo do Site" class="logo-img">
+                <div class="logo-text">
+                    <span class="site-title">Título do Site</span>
+                    <span class="site-subtitle">Subtítulo ou descrição breve</span>
+                </div>
+            </div>
+            <!-- Botão de menu mobile -->
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+            <!-- Menu de navegação -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Alertas</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Situação Nacional</a></li>
+                            <li><a href="#">Alertas Regionais</a></li>
+                            <li><a href="#">Emergências Internacionais</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Negligenciadas</a></li>
+                    <li><a href="#">Dados</a></li>
+                    <li><a href="#">Análises</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="alert-banner">
-    🚨 ALERTA: Surto de Dengue em SP - Acompanhe notícias e atualizações em tempo real
-</div>
-
-<header>
-    <div class="header-top">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <span>Portal de Informação em Epidemiologia | Saúde Pública | SUS</span>
-        </div>
-    </div>
-    <div class="container header-container">
-        <div class="logo">
-            <img src="images/novagave.png" alt="Logo InfoEpi">
-            <div class="logo-text">
-                INFOEPI
-                <span>Vigilância em Saúde no SUS</span>
+            <h1><!-- Título principal --></h1>
+            <p><!-- Descrição breve --></p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary"><!-- Botão 1 --></a>
+                <a href="#" class="btn btn-secondary"><!-- Botão 2 --></a>
             </div>
         </div>
-        <button class="nav-toggle" aria-label="Abrir menu">☰</button>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Início</a></li>
-                <li class="dropdown">
-                    <a href="#">👩⚕️ Profissionais</a>
-                    <div class="dropdown-content">
-                        <a href="/pages/formacao/formacao.html">Cursos</a>
-                        <a href="/pages/materiais/manuais.html">Manuais</a>
-                        <a href="/pages/fichas/fichas-de-notificacao.html">Fichas</a>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section class="news-section">
+        <div class="container">
+            <h2>Últimas Notícias</h2>
+            <div class="news-grid">
+                <!-- Card de notícia -->
+                <article class="news-card">
+                    <img src="images/placeholder.jpg" alt="Imagem da notícia" class="card-image">
+                    <div class="card-content">
+                        <h3><!-- Título da notícia --></h3>
+                        <p class="card-meta"><!-- Data e local --></p>
+                        <p class="card-summary"><!-- Resumo da notícia --></p>
                     </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">👨👩👧 Público</a>
-                    <div class="dropdown-content">
-                        <a href="#noticias-destaque">Notícias</a>
-                        <a href="#recursos-disponiveis">Recursos</a>
-                        <a href="/pages/sobre-o-site.html">Sobre</a>
-                    </div>
-                </li>
-                <li><a href="https://substack.com/@infovepi"  target="_blank">Blog</a></li>
-                <li><a href="/pages/sobre-o-site.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <h1>Seu feed sobre Vigilância em Saúde</h1>
-        <p class="mb-4">Portal com notícias, cursos e conteúdos técnicos sobre Vigilância em Saúde no SUS. Acompanhe atualizações e qualifique sua atuação.</p>
-        <div class="cta-buttons">
-            <a href="#noticias-destaque" class="btn btn-primary">📰 Notícias Recentes</a>
-            <a href="/pages/formacao/formacao.html" class="btn btn-secondary">🎓 Cursos Gratuitos</a>
+                </article>
+                <!-- Repetir cards conforme necessário -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<main class="main-content">
-    <div class="container">
-
-        <section id="recursos-disponiveis">
-            <h2 class="section-title">Recursos Disponíveis</h2>
-            <p class="text-center text-muted mb-5">Ferramentas e conteúdos essenciais para contribuir com seus conhecimentos na área.</p>
-            <div class="sections-grid">
-                <div class="section-card">
-                    <div class="section-icon">📈</div>
-                    <h3>Epidemiologia na prática</h3>
-                    <p>Acesse informações e estatísticas sobre a situação epidemiológica atual.</p>
+    <!-- Seção de Indicadores -->
+    <section class="indicators-section">
+        <div class="container">
+            <h2>Indicadores em Tempo Real</h2>
+            <div class="indicators-grid">
+                <!-- Indicador 1 -->
+                <div class="indicator-card">
+                    <div class="icon-placeholder">🚨</div>
+                    <h3><!-- Título do indicador --></h3>
+                    <p><!-- Descrição curta --></p>
                 </div>
-                <div class="section-card">
-                    <div class="section-icon">⭐</div>
-                    <h3>Guia de Vigilância Simplificado GAVE</h3>
-                    <p>Em atualização</p>
-                </div>
-                <div class="section-card">
-                    <div class="section-icon">📋</div>
-                    <h3>Documentos Técnicos Importantes</h3>
-                    <p>Consulte manuais e guias técnicos para profissionais de saúde.</p>
-                </div>
-                <div class="section-card">
-                    <div class="section-icon">🎓</div>
-                    <h3>Cursos InfoEpi</h3>
-                    <p>Cursos gratuitos e especializados com certificado.</p>
-                </div>
+                <!-- Repetir indicadores conforme necessário -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="news-section">
-            <h2>📰 Últimas Notícias</h2>
-            <div id="blog-posts-container"></div>
-        </section>
-
-        <section class="news-section">
-            <h2>🗞️ Clipping de Notícias</h2>
-            <div id="clipping-posts-container"></div>
-        </section>
-
-        <aside class="sidebar">
-            <div class="widget gave-preview">
-                <h3>📖 GAVE - Guia de Bolso</h3>
-                <p>Seu guia prático de vigilância epidemiológica sempre à mão.</p>
-                <br>
-                <a href="/pages/doencas-de-notificacao-compulsoria.html" class="btn btn-secondary">Acessar Guia</a>
+    <!-- Seção de Cursos -->
+    <section class="courses-section">
+        <div class="container">
+            <h2>Próximos Cursos</h2>
+            <div class="courses-grid">
+                <!-- Curso 1 -->
+                <div class="course-card">
+                    <h3><!-- Título do curso --></h3>
+                    <p><!-- Detalhes do curso --></p>
+                    <a href="#" class="btn btn-secondary">Saiba mais</a>
+                </div>
+                <!-- Repetir cursos conforme necessário -->
             </div>
-            <div class="widget">
-                <h3>📊 Indicadores em Tempo Real</h3>
-                <div class="indicator">
-                    <span>Dengue - Nacional</span>
-                    <span class="indicator-value">↗️ +23%</span>
-                </div>
-                <div class="indicator">
-                    <span>COVID-19 - SE 05</span>
-                    <span class="indicator-value">↘️ -8%</span>
-                </div>
-                <div class="indicator">
-                    <span>Tuberculose - RJ</span>
-                    <span class="indicator-value">→ Estável</span>
-                </div>
-                <div class="indicator">
-                    <span>Sífilis Congênita</span>
-                    <span class="indicator-value">↗️ +15%</span>
-                </div>
-            </div>
-            <div class="widget">
-                <h3>🎓 Próximos Cursos</h3>
-                <p><strong>Vigilância Epidemiológica Básica</strong><br>
-                📅 15 de Junho | 🆓 Gratuito<br>
-                <small>40 vagas disponíveis</small></p>
-                <p><strong>Análise de Dados com R</strong><br>
-                📅 22 de Junho | 🆓 Gratuito<br>
-                <small>25 vagas disponíveis</small></p>
-            </div>
-        </aside>
+        </div>
+    </section>
 
-    </div>
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer-container">
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="container footer-container">
             <div class="footer-col">
-                <h3>Sobre o INFOEPI</h3>
-                <p>O Portal de Informação em Epidemiologia (InfoEpi) é dedicado a fornecer informações e recursos sobre doenças de notificação compulsória e vigilância epidemiológica para profissionais de saúde e população geral.</p>
+                <h3>Sobre o Site</h3>
+                <p><!-- Breve descrição --></p>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><span class="icon">f</span></a>
-                    <a href="#" aria-label="Twitter"><span class="icon">t</span></a>
-                    <a href="#" aria-label="Instagram"><span class="icon">i</span></a>
-                    <a href="#" aria-label="YouTube"><span class="icon">y</span></a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
                 </div>
             </div>
             <div class="footer-col">
                 <h3>Links Rápidos</h3>
                 <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="/pages/doencas-de-notificacao-compulsoria.html">GAVE</a></li>
-                    <li><a href="/pages/formacao/formacao.html">Cursos</a></li>
-                    <li><a href="/pages/formacao/formacao.html">Outros Cursos</a></li>
-                    <li><a href="/materiais/materiais/manuais.html">Publicações</a></li>
-                    <li><a href="https://substack.com/@infovepi"  target="_blank">Nosso Blog</a></li>
-                    <li><a href="/pages/sobre-o-site.html">Sobre</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Alertas</a></li>
+                    <li><a href="#">Negligenciadas</a></li>
+                    <li><a href="#">Dados</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Recursos</h3>
                 <ul class="footer-links">
-                    <li><a href="/pages/fichas/fichas-de-notificacao.html">Fichas de Notificação</a></li>
-                    <li><a href="/pages/materiais/manuais.html">Manuais Técnicos</a></li>
-                    <li><a href="/pages/info/informes-tecnicos.html">Informes Epidemiológicos</a></li>
-                    <li><a href="glossario.html">Glossário</a></li>
-                    <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+                    <li><a href="#">Banco de Dados</a></li>
+                    <li><a href="#">Legislação</a></li>
+                    <li><a href="#">Contatos Úteis</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Contato</h3>
-                <p>Entre em contato conosco para mais informações ou sugestões.</p>
-                <ul class="footer-links">
-                    <li><span class="icon">✉</span> cotato.infoepi@gmail.com</li>
-                    <li><span class="icon">☎</span> (21) 99889-8984</li>
-                </ul>
+                <p><!-- Informações de contato --></p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 INFOEPI - Todos os direitos reservados.</p>
+            <p>&copy; 2025 Nome do Site. Todos os direitos reservados.</p>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
